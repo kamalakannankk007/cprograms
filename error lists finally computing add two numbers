@@ -1,0 +1,318 @@
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst 12.c
+2 files to edit
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+tst12.c: In function ‘input’:
+tst12.c:7:2: error: expected ‘;’ before ‘scanf’
+  scanf("%d,&a);
+  ^~~~~
+tst12.c:7:8: warning: missing terminating " character
+  scanf("%d,&a);
+        ^
+tst12.c:7:8: error: missing terminating " character
+  scanf("%d,&a);
+        ^~~~~~~~
+tst12.c:8:8: warning: missing terminating " character
+  scanf("%d,&b);
+        ^
+tst12.c:8:8: error: missing terminating " character
+  scanf("%d,&b);
+        ^~~~~~~~
+tst12.c:27:1: error: expected declaration or statement at end of input
+ }
+ ^
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+tst12.c: In function ‘input’:
+tst12.c:7:2: error: expected ‘;’ before ‘scanf’
+  scanf("%d" ,&a);
+  ^~~~~
+tst12.c:10:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+tst12.c: In function ‘compute’:
+tst12.c:13:8: error: expected ‘;’ before ‘sum’
+  input sum;
+        ^~~
+tst12.c:14:2: error: ‘sum’ undeclared (first use in this function)
+  sum =a+b;
+  ^~~
+tst12.c:14:2: note: each undeclared identifier is reported only once for each function it appears in
+tst12.c:16:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+tst12.c: At top level:
+tst12.c:17:1: error: unknown type name ‘output’
+ output compute(int a,int b, int c)
+ ^~~~~~
+tst12.c:17:8: error: conflicting types for ‘compute’
+ output compute(int a,int b, int c)
+        ^~~~~~~
+tst12.c:11:5: note: previous definition of ‘compute’ was here
+ int compute(int a, int b)
+     ^~~~~~~
+tst12.c: In function ‘compute’:
+tst12.c:20:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+tst12.c: In function ‘main’:
+tst12.c:25:8: error: too few arguments to function ‘compute’
+  int c=compute(a,b);
+        ^~~~~~~
+tst12.c:17:8: note: declared here
+ output compute(int a,int b, int c)
+        ^~~~~~~
+tst12.c:26:2: warning: implicit declaration of function ‘output’; did you mean ‘input’? [-Wimplicit-function-declaration]
+  output (a,b,c);
+  ^~~~~~
+  input
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+tst12.c: In function ‘compute’:
+tst12.c:13:8: error: expected ‘;’ before ‘sum’
+  input sum;
+        ^~~
+tst12.c:14:2: error: ‘sum’ undeclared (first use in this function)
+  sum =a+b;
+  ^~~
+tst12.c:14:2: note: each undeclared identifier is reported only once for each function it appears in
+tst12.c: At top level:
+tst12.c:17:1: error: unknown type name ‘output’
+ output compute(int a,int b, int c)
+ ^~~~~~
+tst12.c:17:8: error: conflicting types for ‘compute’
+ output compute(int a,int b, int c)
+        ^~~~~~~
+tst12.c:11:5: note: previous definition of ‘compute’ was here
+ int compute(int a, int b)
+     ^~~~~~~
+tst12.c: In function ‘compute’:
+tst12.c:20:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+tst12.c: In function ‘main’:
+tst12.c:25:8: error: too few arguments to function ‘compute’
+  int c=compute(a,b);
+        ^~~~~~~
+tst12.c:17:8: note: declared here
+ output compute(int a,int b, int c)
+        ^~~~~~~
+tst12.c:26:2: warning: implicit declaration of function ‘output’; did you mean ‘input’? [-Wimplicit-function-declaration]
+  output (a,b,c);
+  ^~~~~~
+  input
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+tst12.c: In function ‘compute’:
+tst12.c:13:8: error: expected ‘;’ before ‘sum’
+  input sum;
+        ^~~
+tst12.c:14:2: error: ‘sum’ undeclared (first use in this function)
+  sum =a+b;
+  ^~~
+tst12.c:14:2: note: each undeclared identifier is reported only once for each function it appears in
+tst12.c: In function ‘output’:
+tst12.c:20:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+tst12.c: In function ‘compute’:
+tst12.c:13:8: error: expected ‘;’ before ‘sum’
+  input sum;
+        ^~~
+tst12.c:14:2: error: ‘sum’ undeclared (first use in this function)
+  sum =a+b;
+  ^~~
+tst12.c:14:2: note: each undeclared identifier is reported only once for each function it appears in
+tst12.c: In function ‘output’:
+tst12.c:20:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+6
+6
+enter two numbers
+6
+6
+1+1=2
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+6
+9
+enter two numbers
+6
+9
+\1+1=2
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a/out
+bash: ./a/out: No such file or directory
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a. exe
+bash: ./a.: No such file or directory
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+4 5
+enter two numbers
+5
+
+
+4
+1+1=25
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ 54
+tbash: 54: command not found
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+4
+5
+enter two numbers
+4
+5
+1+1=2
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+3
+4
+enter two numbers
+3
+3
+1+1=2
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+3
+4
+enter two numbers
+3
+4
+1+1=2
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+6
+7
+0+0=0
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+4
+5
+0+0=0
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+4 5
+0+0=0
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+tst12.c:2:11: error: unknown type name ‘innt’; did you mean ‘int’?
+ int input(innt b)
+           ^~~~
+           int
+tst12.c: In function ‘main’:
+tst12.c:22:8: warning: implicit declaration of function ‘input’; did you mean ‘output’? [-Wimplicit-function-declaration]
+  int a=input();
+        ^~~~~
+        output
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+tst12.c: In function ‘input’:
+tst12.c:5:15: error: ‘a’ undeclared (first use in this function)
+  scanf("%d" ,&a);
+               ^
+tst12.c:5:15: note: each undeclared identifier is reported only once for each function it appears in
+tst12.c:6:15: error: ‘b’ undeclared (first use in this function)
+  scanf("%d" ,&b);
+               ^
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ vim tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ gcc tst12.c
+
+kamala kannan N@LAPTOP-41D5E57Q MINGW64 ~
+$ ./a.exe
+enter two numbers
+3
+4
+enter two numbers
+3
+5
+4+5=9
